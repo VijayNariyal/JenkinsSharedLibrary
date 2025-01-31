@@ -1,5 +1,5 @@
 def call(String url, String branch){
   echo "Docker Hub will clone the image"
-  git branch: "${branch}", url: "${url}"
+  git url: "${url}", branch: "${branch}"
   echo "Code clone successfully"
 }
